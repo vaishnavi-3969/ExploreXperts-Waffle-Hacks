@@ -1,90 +1,143 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaCar, FaBicycle, FaUserFriends, FaBuilding, FaSuitcase, FaTree } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Aeroplane from '../assets/aeroplane.png';
+import Logo from '../assets/logo.png';
 
 const HomePage = () => {
-  const [typingText, setTypingText] = useState('');
-  const [glowAnimation, setGlowAnimation] = useState(false);
+    const [typingText, setTypingText] = useState('');
+    const [glowAnimation, setGlowAnimation] = useState(false);
 
-  useEffect(() => {
-    const websiteName = 'Sustainable Safari';
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      setTypingText((prevText) => websiteName.slice(0, currentIndex + 1));
-      currentIndex++;
-      if (currentIndex === websiteName.length) {
-        clearInterval(typingInterval);
-        setGlowAnimation(true);
-      }
-    }, 100);
-  }, []);
-  
+    useEffect(() => {
+        const websiteName = 'Sustainable Safari';
+        let currentIndex = 0;
+        const typingInterval = setInterval(() => {
+            setTypingText((prevText) => websiteName.slice(0, currentIndex + 1));
+            currentIndex++;
+            if (currentIndex === websiteName.length) {
+                clearInterval(typingInterval);
+                setGlowAnimation(true);
+            }
+        }, 100);
+    }, []);
 
-  return (
-    <div className="homepage">
-      <div className="hero-section bg-gradient-to-r from-green-400 to-blue-500 text-white py-10 px-10">
-        <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className={`hero-title text-4xl font-bold ${glowAnimation ? 'glow-animation' : ''}`}
-        >
-          {typingText}
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="hero-description text-lg mt-4"
-        >
-          Embark on eco-friendly adventures, explore nature responsibly, and experience sustainable travel at its best.
-        </motion.p>
-      </div>
+    const featureCards = [
+        {
+            icon: FaCar,
+            title: 'Carpooling',
+            description: 'Share rides with fellow travelers and reduce your carbon footprint.',
+            link: '/carpooling',
+        },
+        {
+            icon: FaBicycle,
+            title: 'Cycling Options',
+            link: '/cycling-options',
+            description: 'Discover nearby cycling routes and embrace sustainable transportation.',
+        },
+        {
+            icon: FaUserFriends,
+            title: 'Local Guides',
+            link: '/local-guides',
+            description: 'Connect with knowledgeable local guides for authentic and sustainable experiences.',
+        },
+        {
+            icon: FaBuilding,
+            title: 'Eco-Friendly Accommodation',
+            link: '/accomodation',
+            description: 'Find and book eco-friendly accommodations that prioritize sustainability.',
+        },
+        {
+            icon: FaSuitcase,
+            title: 'Packing Tips',
+            link: '/packing-tips',
+            description: 'Get expert tips on sustainable packing and minimize your environmental impact.',
+        },
+        {
+            icon: FaTree,
+            title: 'Sustainable Activities',
+            link: '/sustainable-activities',
+            description: 'Discover and participate in sustainable activities that promote environmental conservation.',
+        },
+        {
+            icon: FaTree,
+            title: 'Responsible Travel Planning',
+            link: '/responsible-travel-planning',
+            description: 'Plan your trips responsibly by considering sustainable transportation and accommodations.',
+        },
+    ];
 
-      <div className="features-section flex justify-center items-center my-10">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="feature-card bg-white rounded-lg shadow-lg p-6 mx-4"
-        >
-          <img src="carpooling-icon.png" alt="Carpooling" className="feature-icon w-16 h-16 mb-4" />
-          <h2 className="feature-title text-xl font-bold mb-2">Carpooling</h2>
-          <p className="feature-description text-gray-600">Share rides with fellow travelers and reduce your carbon footprint.</p>
-        </motion.div>
+    return (
+        <div>
+            <div className="homepage bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-10">
+                <div className="relative">
+                    <motion.div
+                        initial={{ x: '-100vw', y: '50%' }}
+                        animate={{ x: '100vw', y: '50%' }}
+                        transition={{ duration: 7, repeat: Infinity, repeatType: 'loop', ease: 'linear' }}
+                        className="absolute top-0 left-0"
+                    >
+                        <img src={Aeroplane} alt="Airplane" className="w-30 h-auto" />
+                    </motion.div>
+                </div>
 
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="feature-card bg-white rounded-lg shadow-lg p-6 mx-4"
-        >
-          <img src="cycling-icon.png" alt="Cycling Options" className="feature-icon w-16 h-16 mb-4" />
-          <h2 className="feature-title text-xl font-bold mb-2">Cycling Options</h2>
-          <p className="feature-description text-gray-600">Discover nearby cycling routes and embrace sustainable transportation.</p>
-        </motion.div>
+                <div className="hero-section py-10 px-10">
+                <img src={Logo} width={100} alt='logo'/>
+                    <motion.h1
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className={`hero-title text-4xl font-bold ${glowAnimation ? 'glow-animation' : ''}`}
+                    >
+                        {typingText}
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: -30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        className="hero-description text-lg mt-4"
+                    >
+                        Embark on eco-friendly adventures, explore nature responsibly, and experience sustainable travel at its best.
+                    </motion.p>
 
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="feature-card bg-white rounded-lg shadow-lg p-6 mx-4"
-        >
-          <img src="local-guides-icon.png" alt="Local Guides" className="feature-icon w-16 h-16 mb-4" />
-          <h2 className="feature-title text-xl font-bold mb-2">Local Guides</h2>
-          <p className="feature-description text-gray-600">Connect with knowledgeable local guides for authentic and sustainable experiences.</p>
-        </motion.div>
+                    <motion.button
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.5 }}
+                        className="hero-button bg-white text-blue-500 font-bold rounded-full px-6 py-3 mt-6 shadow-lg"
+                    >
+                        Start Exploring
+                    </motion.button>
+                </div>
 
-        
-      </div>
-
-      <div className="content-section py-10 bg-gray-100 text-center">
-        <h2 className="section-title text-3xl font-bold mb-4">Explore the Beauty of Nature Responsibly</h2>
-        <p className="section-description text-gray-600 leading-relaxed mx-auto max-w-lg">
-          At Sustainable Safari, we believe in promoting eco-friendly travel and protecting the environment.
-          Our platform offers a range of sustainable activities, farm-to-table dining experiences, and eco-friendly accommodation recommendations.
-          Join us in making a positive impact while enjoying memorable adventures in nature.
-        </p>
-        <a href="/explore" className="explore-button inline-block px-6 py-3 mt-6 bg-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 transition duration-200">Explore Now</a>
-      </div>
-    </div>
-  );
-}
+                <div className="features-section flex justify-center items-center my-10 ">
+                    <div className="grid grid-cols-3 gap-4">
+                        {featureCards.map((card, index) => (
+                            <motion.div
+                                key={index}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="feature-card bg-white  rounded-lg shadow-lg p-6"
+                            >
+                                <motion.div
+                                    initial={{ opacity: 0, y: -20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                                >
+                                    <Link to={card.link}>
+                                        <card.icon className="feature-icon text-3xl mb-2 text-green-600" />
+                                        <h2 className="feature-title text-xl font-bold text-gray-800">{card.title}</h2>
+                                        <p className="feature-description text-gray-600 dark:text-gray-400">{card.description}</p>
+                                    </Link>
+                                </motion.div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    );
+};
 
 export default HomePage;
