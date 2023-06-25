@@ -1,5 +1,6 @@
 {
-  "name": "https://vaishnavi-3969.github.io/Sustainable-Safari-Waffle-Hacks",
+  "name":"Sustainable Safari",
+  "homepage": "https://vaishnavi-3969.github.io/Sustainable-Safari-Waffle-Hacks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
