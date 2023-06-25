@@ -83,7 +83,7 @@ const HomePage = () => {
             name: 'Nidhi Berde',
             role: 'Developer',
             image: Avatar2,
-            github: 'https://github.com',
+            github: 'https://github.com/NidhiTheBerde',
             linkedin: 'https://www.linkedin.com/in',
         },
         {
