@@ -128,7 +128,7 @@ const HomePage = () => {
                                     <Link to={card.link}>
                                         <card.icon className="feature-icon text-3xl mb-2 text-red-600" />
                                         <h2 className="feature-title text-xl font-bold text-gray-900">{card.title}</h2>
-                                        <p className="feature-description text-gray-600 dark:text-gray-400">{card.description}</p>
+                                        <p className="feature-description text-gray-800">{card.description}</p>
                                     </Link>
                                 </motion.div>
                             </motion.div>
