@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sustainable-Safari-Waffle-Hacks/static/css/main.a85e442b.css",
-    "main.js": "/Sustainable-Safari-Waffle-Hacks/static/js/main.15559809.js",
+    "main.js": "/Sustainable-Safari-Waffle-Hacks/static/js/main.8f954468.js",
     "static/media/nature-expedition.gif": "/Sustainable-Safari-Waffle-Hacks/static/media/nature-expedition.c4c698130fa932f4e46b.gif",
     "static/media/window4.gif": "/Sustainable-Safari-Waffle-Hacks/static/media/window4.1cea9b1c8f639ecc0c9a.gif",
     "static/media/window3.gif": "/Sustainable-Safari-Waffle-Hacks/static/media/window3.61db1f10fe65687a8a7a.gif",
@@ -31,10 +31,10 @@
     "static/media/aeroplane.png": "/Sustainable-Safari-Waffle-Hacks/static/media/aeroplane.c98536e25a0399f330d5.png",
     "index.html": "/Sustainable-Safari-Waffle-Hacks/index.html",
     "main.a85e442b.css.map": "/Sustainable-Safari-Waffle-Hacks/static/css/main.a85e442b.css.map",
-    "main.15559809.js.map": "/Sustainable-Safari-Waffle-Hacks/static/js/main.15559809.js.map"
+    "main.8f954468.js.map": "/Sustainable-Safari-Waffle-Hacks/static/js/main.8f954468.js.map"
   },
   "entrypoints": [
     "static/css/main.a85e442b.css",
-    "static/js/main.15559809.js"
+    "static/js/main.8f954468.js"
   ]
 }
