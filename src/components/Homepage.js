@@ -73,27 +73,27 @@ const HomePage = () => {
 
     const teamMembers = [
         {
-          name: 'Vaishnavi Kale',
-          role: 'Developer',
-          image: Avatar1,
-          github: 'https://github.com/vaishnavi-3969',
-          linkedin: 'https://www.linkedin.com/in/vaishnavi-kale-111543204/',
+            name: 'Vaishnavi Kale',
+            role: 'Developer',
+            image: Avatar1,
+            github: 'https://github.com/vaishnavi-3969',
+            linkedin: 'https://www.linkedin.com/in/vaishnavi-kale-111543204/',
         },
         {
-          name: 'Nidhi Berde',
-          role: 'Developer',
-          image: Avatar2,
-          github: 'https://github.com',
-          linkedin: 'https://www.linkedin.com/in',
+            name: 'Nidhi Berde',
+            role: 'Developer',
+            image: Avatar2,
+            github: 'https://github.com',
+            linkedin: 'https://www.linkedin.com/in',
         },
         {
-          name: 'Tia Agrawal',
-          role: 'Developer',
-          image: Avatar3,
-          github: 'https://github.com/tiaagrawal',
-          linkedin: 'https://www.linkedin.com/in/tiaagrawal/',
+            name: 'Tia Agrawal',
+            role: 'Developer',
+            image: Avatar3,
+            github: 'https://github.com/tiaagrawal',
+            linkedin: 'https://www.linkedin.com/in/tiaagrawal/',
         },
-      ];
+    ];
 
     return (
         <div>
@@ -110,7 +110,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="hero-section py-3 px-10 ">
-                <img src={Logo} width={200} alt='logo'/>
+                    <img src={Logo} width={200} alt='logo' />
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -163,60 +163,60 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-           <div className="meet-the-team py-10 bg-white px-10">
-        <h2 className="text-3xl font-bold text-center mb-6">Meet the Team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {teamMembers.map((member, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="team-member-card bg-gray-100 p-6 rounded-lg shadow-lg"
-            >
-              <motion.div
-                className="avatar-container mb-4"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="rounded-full mx-auto h-24 w-24"
-                />
-              </motion.div>
-              <motion.h3
-                className="text-xl font-bold mb-2"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
-              >
-                {member.name}
-              </motion.h3>
-              <motion.p
-                className="text-gray-600"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
-              >
-                {member.role}
-              </motion.p>
-              <motion.div
-                className="social-links flex justify-center mt-4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.1 + 0.4 }}
-              >
-                <a href={member.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="mr-2 text-gray-600 hover:text-gray-900" />
-                </a>
-                <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="text-gray-600 hover:text-gray-900" />
-                </a>
-              </motion.div>
-            </motion.div>
-          ))}
-        </div>
+            <div className="meet-the-team py-10 bg-white px-10">
+                <h2 className="text-3xl font-bold text-center mb-6">Meet the Team</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {teamMembers.map((member, index) => (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="team-member-card bg-gray-100 p-6 rounded-lg shadow-lg"
+                        >
+                            <motion.div
+                                className="avatar-container mb-4"
+                                initial={{ scale: 0 }}
+                                animate={{ scale: 1 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                            >
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="rounded-full mx-auto h-50 w-50"
+                                />
+                            </motion.div>
+                            <motion.h3
+                                className="text-xl font-bold mb-2"
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
+                            >
+                                {member.name}
+                            </motion.h3>
+                            <motion.p
+                                className="text-gray-600"
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
+                            >
+                                {member.role}
+                            </motion.p>
+                            <motion.div
+                                className="social-links flex justify-center mt-4"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.4, delay: index * 0.1 + 0.4 }}
+                            >
+                                <a href={member.github} target="_blank" rel="noopener noreferrer">
+                                    <FaGithub className="mr-2 text-gray-600 hover:text-gray-900" />
+                                </a>
+                                <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin className="text-gray-600 hover:text-gray-900" />
+                                </a>
+                            </motion.div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </div>
     );

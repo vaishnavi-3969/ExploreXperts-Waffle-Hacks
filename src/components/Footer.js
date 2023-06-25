@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
           <div className="flex items-center mb-4 md:mb-0">
             <FaHeart className="text-red-500 text-2xl mr-2" />
-            <span className="text-gray-600">Made with Love by Vaishnavi, Nidhi and Riya for WaffleHacks '23</span>
+            <span className="text-gray-600">Made with Love for WaffleHacks '23</span>
           </div>
           <div className="flex items-center ml-0 md:ml-1">
             <span className="text-gray-600 mr-2">using React JS and Tailwind CSS</span>
@@ -28,6 +28,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        className="absolute top-0 left-0 right-0 h-3 bg-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      />
     </footer>
   );
 };
