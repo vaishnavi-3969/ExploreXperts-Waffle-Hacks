@@ -5,6 +5,9 @@ import Carpooling from "./components/Carpooling/Carpooling.js";
 import Footer from "./components/Footer.js";
 import CyclingOptions from "./components/CyclingOptions/CyclingOptions.js";
 import LocalGuide from "./components/LocalGuides/LocalGuides.js";
+import EcoAccommodation from "./components/Accomodation Recommendations/EcoAccomodation.js";
+import PackingTips from "./components/Packing Tips/PackingTips.js";
+import SustainableActivities from "./components/Sustainable Activities/SustainableActivities.js";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/carpooling" element={<Carpooling />} exact />
           <Route path="/cycling-options" element={<CyclingOptions />} exact />
           <Route path="/local-guides" element={<LocalGuide />} exact />
+          <Route path="/accomodation" element={<EcoAccommodation/>} exact />
+          <Route path="/packing-tips" element={<PackingTips/>} exact />
+          <Route path="/sustainable-activities" element={<SustainableActivities/>} exact />
         </Routes>
         <Footer/>
       </BrowserRouter>
