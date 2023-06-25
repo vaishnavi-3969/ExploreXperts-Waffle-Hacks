@@ -17,7 +17,6 @@ Nearby Cycling Options: Provide cycling routes and rental services for sustainab
 7. Sustainable Packing Tips: Offer guidelines for environmentally friendly packing.
 8. Travel Planning Tools: Provide itinerary builders, trip planners, and interactive maps for sustainable travel planning.
 
-
 ### Conclusion:
 Our platform offers carpooling, cycling options, local guides, farm-to-table restaurants, and accessibility features to promote sustainable travel. With a focus on eco-friendly practices, we aim to provide users with an inclusive and environmentally conscious travel experience.
 
