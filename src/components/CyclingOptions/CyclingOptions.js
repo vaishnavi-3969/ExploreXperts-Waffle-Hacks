@@ -220,22 +220,22 @@ const CyclingOptions = () => {
 
             <h1 className="text-4xl font-bold text-white mb-6">Cycling Options</h1>
             <div >
-        <motion.div
-          initial={{ x: '-100vw', y: '50%' }}
-          animate={{ x: '100vw', y: '50%' }}
-          transition={{ duration: 7, repeat: Infinity, repeatType: 'loop', ease: 'linear' }}
-          className="absolute top-0 left-0"
-        >
-          <motion.img
-            src={Cycle}
-            alt="Cycle"
-            className="w-30 h-auto"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-          />
-        </motion.div>
-      </div>
+                <motion.div
+                    initial={{ x: '-100vw', y: '50%' }}
+                    animate={{ x: '100vw', y: '50%' }}
+                    transition={{ duration: 7, repeat: Infinity, repeatType: 'loop', ease: 'linear' }}
+                    className="absolute top-0 left-0"
+                >
+                    <motion.img
+                        src={Cycle}
+                        alt="Cycle"
+                        className="w-30 h-auto"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1 }}
+                    />
+                </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {cyclingRoutes.map((route) => (

@@ -8,6 +8,7 @@ import Car from '../../assets/car.gif';
 import CityTour from '../../assets/city-tour.gif'
 import NatureExpedition from '../../assets/nature-expedition.gif'
 import MorningCommute from '../../assets/morning-commute.gif';
+import Vehicle from '../../assets/vehicle.png';
 
 const Carpooling = () => {
   const carpoolingData = [
@@ -62,6 +63,23 @@ const Carpooling = () => {
   return (
     <div className="carpooling">
       <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-10">
+      <div >
+        <motion.div
+          initial={{ x: '-100vw', y: '50%' }}
+          animate={{ x: '100vw', y: '50%' }}
+          transition={{ duration: 7, repeat: Infinity, repeatType: 'loop', ease: 'linear' }}
+          className="absolute top-0 left-0"
+        >
+          <motion.img
+            src={Vehicle}
+            alt="Vehicle"
+            className="w-21 h-40"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+          />
+        </motion.div>
+      </div>
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-8">Carpooling</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-900">
