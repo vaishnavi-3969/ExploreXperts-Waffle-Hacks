@@ -9,7 +9,7 @@ import Avatar1 from '../assets/avatar1.png';
 import Avatar2 from '../assets/avatar2.png';
 import Avatar3 from '../assets/avatar3.png';
 
-const HomePage = () => {
+const Home = () => {
     const [typingText, setTypingText] = useState('');
     const [glowAnimation, setGlowAnimation] = useState(false);
 
@@ -222,4 +222,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Home;

@@ -7,7 +7,7 @@ import LocalGuide from "./components/LocalGuides/LocalGuides.js";
 import EcoAccommodation from "./components/Accomodation Recommendations/EcoAccomodation.js";
 import PackingTips from "./components/Packing Tips/PackingTips.js";
 import SustainableActivities from "./components/Sustainable Activities/SustainableActivities.js";
-import HomePage from './components/HomePage';
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Dropdown />
         </div>
         <Routes>
-          <Route path="/" element={<HomePage />} exact />
+          <Route path="/" element={<Home />} exact />
           <Route path="/carpooling" element={<Carpooling />} exact />
           <Route path="/cycling-options" element={<CyclingOptions />} exact />
           <Route path="/local-guides" element={<LocalGuide />} exact />
