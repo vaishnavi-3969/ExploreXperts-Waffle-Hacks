@@ -4,6 +4,7 @@ import { FaCar, FaBicycle, FaUserFriends, FaBuilding, FaSuitcase, FaTree } from 
 import { Link } from 'react-router-dom';
 import Aeroplane from '../assets/aeroplane.png';
 import Logo from '../assets/logo.png';
+import './HomePage.css';
 
 const HomePage = () => {
     const [typingText, setTypingText] = useState('');
@@ -82,7 +83,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="hero-section py-3 px-10 ">
-                <img src={Logo} width={150} alt='logo'/>
+                <img src={Logo} width={200} alt='logo'/>
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -117,7 +118,7 @@ const HomePage = () => {
                                 key={index}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="feature-card bg-gray-300  rounded-lg shadow-lg p-6"
+                                className="feature-card bg-white-0  p-6 py-16"
                             >
                                 <motion.div
                                     initial={{ opacity: 0, y: -20 }}
@@ -125,8 +126,8 @@ const HomePage = () => {
                                     transition={{ duration: 0.6, delay: index * 0.2 }}
                                 >
                                     <Link to={card.link}>
-                                        <card.icon className="feature-icon text-3xl mb-2 text-green-600" />
-                                        <h2 className="feature-title text-xl font-bold text-gray-800">{card.title}</h2>
+                                        <card.icon className="feature-icon text-3xl mb-2 text-red-600" />
+                                        <h2 className="feature-title text-xl font-bold text-gray-900">{card.title}</h2>
                                         <p className="feature-description text-gray-600 dark:text-gray-400">{card.description}</p>
                                     </Link>
                                 </motion.div>
