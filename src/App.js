@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage.js";
 import Dropdown from "./components/Dropdown";
 import Carpooling from "./components/Carpooling/Carpooling.js";
 import Footer from "./components/Footer.js";
+import CyclingOptions from "./components/CyclingOptions/CyclingOptions.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/carpooling" element={<Carpooling />} exact />
+          <Route path="/cycling-options" element={<CyclingOptions />} exact />
         </Routes>
         <Footer/>
       </BrowserRouter>
