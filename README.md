@@ -22,3 +22,8 @@ Nearby Cycling Options: Provide cycling routes and rental services for sustainab
 Our platform offers carpooling, cycling options, local guides, farm-to-table restaurants, and accessibility features to promote sustainable travel. With a focus on eco-friendly practices, we aim to provide users with an inclusive and environmentally conscious travel experience.
 
 </div>
+<div align='center'>
+  <h2>Tools and Technologies used</h2>
+     <img src="https://skillicons.dev/icons?i=github,git,react,tailwind,html,css,js,vscode"/>
+<p>
+</div>
