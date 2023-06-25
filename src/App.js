@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./components/HomePage.js";
 import Dropdown from "./components/Dropdown";
 import Carpooling from "./components/Carpooling/Carpooling.js";
 import Footer from "./components/Footer.js";
@@ -8,6 +7,7 @@ import LocalGuide from "./components/LocalGuides/LocalGuides.js";
 import EcoAccommodation from "./components/Accomodation Recommendations/EcoAccomodation.js";
 import PackingTips from "./components/Packing Tips/PackingTips.js";
 import SustainableActivities from "./components/Sustainable Activities/SustainableActivities.js";
+import HomePage from './components/HomePage';
 
 function App() {
   return (
