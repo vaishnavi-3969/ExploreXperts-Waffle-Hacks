@@ -81,8 +81,8 @@ const HomePage = () => {
                     </motion.div>
                 </div>
 
-                <div className="hero-section py-10 px-10">
-                <img src={Logo} width={100} alt='logo'/>
+                <div className="hero-section py-3 px-10 ">
+                <img src={Logo} width={150} alt='logo'/>
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ const HomePage = () => {
                                 key={index}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="feature-card bg-white  rounded-lg shadow-lg p-6"
+                                className="feature-card bg-gray-300  rounded-lg shadow-lg p-6"
                             >
                                 <motion.div
                                     initial={{ opacity: 0, y: -20 }}
