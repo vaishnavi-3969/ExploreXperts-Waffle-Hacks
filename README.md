@@ -1,3 +1,6 @@
+<div align='center'>
+  <img src = "https://github.com/vaishnavi-3969/Sustainable-Safari-Waffle-Hacks/assets/80088403/29d0a715-07e4-466a-89f2-ac645d8771e1" width='300px'/>
+
 ### Title: Sustainable Travel Experience Platform
 
 ### Problem Statement:
@@ -17,3 +20,5 @@ Nearby Cycling Options: Provide cycling routes and rental services for sustainab
 
 ### Conclusion:
 Our platform offers carpooling, cycling options, local guides, farm-to-table restaurants, and accessibility features to promote sustainable travel. With a focus on eco-friendly practices, we aim to provide users with an inclusive and environmentally conscious travel experience.
+
+</div>
