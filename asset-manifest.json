@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5a048cd.css",
+    "main.js": "/static/js/main.6871fefd.js",
+    "static/media/nature-expedition.gif": "/static/media/nature-expedition.c4c698130fa932f4e46b.gif",
+    "static/media/window4.gif": "/static/media/window4.1cea9b1c8f639ecc0c9a.gif",
+    "static/media/window3.gif": "/static/media/window3.61db1f10fe65687a8a7a.gif",
+    "static/media/window1.gif": "/static/media/window1.8b65ad525aa85f88669b.gif",
+    "static/media/window2.gif": "/static/media/window2.5860372b19a223714868.gif",
+    "static/media/green oasis resort.png": "/static/media/green oasis resort.695205190d1b881dc1ad.png",
+    "static/media/city-tour.gif": "/static/media/city-tour.b5ff8fbd359f023ba1e4.gif",
+    "static/media/eco treehouse retreat.jpg": "/static/media/eco treehouse retreat.da57e0564b95f5cf57e2.jpg",
+    "static/media/car.gif": "/static/media/car.3ef0d18e3e322d4ba452.gif",
+    "static/media/sustainable safari camp.jpg": "/static/media/sustainable safari camp.ff7de11743b0b2d4c204.jpg",
+    "static/media/morning-commute.gif": "/static/media/morning-commute.0e4b65652e311259b332.gif",
+    "static/media/farm stay cottages.jpg": "/static/media/farm stay cottages.0324f39f02ff40360aa2.jpg",
+    "static/media/sustainable mountain lodge.jpg": "/static/media/sustainable mountain lodge.d5c6b99ec83b89ef0aa8.jpg",
+    "static/media/vehicle.png": "/static/media/vehicle.271ec752f6360a90af30.png",
+    "static/media/ocean view ecovillas.jpg": "/static/media/ocean view ecovillas.0155efa1014d8784536d.jpg",
+    "static/media/green haven resort.jpg": "/static/media/green haven resort.7d0fc6215a099fffb88a.jpg",
+    "static/media/bird3.png": "/static/media/bird3.9ffb308e0de28da9bf4b.png",
+    "static/media/avatar1.png": "/static/media/avatar1.22dcaf57f9f61de11bbd.png",
+    "static/media/logo.png": "/static/media/logo.0150319a41a71bb7b057.png",
+    "static/media/cycling.png": "/static/media/cycling.0ee86039371081f515ee.png",
+    "static/media/avatar2.png": "/static/media/avatar2.549a8f55b5287904dc89.png",
+    "static/media/avatar3.png": "/static/media/avatar3.de0e089d2c76a0a9028e.png",
+    "static/media/nature retreat lodge.jpg": "/static/media/nature retreat lodge.27500b122dffe6c5fc90.jpg",
+    "static/media/bird2.png": "/static/media/bird2.1cdf61ecdaf64b379d9c.png",
+    "static/media/shadow-cloud.png": "/static/media/shadow-cloud.25f21a435ad7dca9ac94.png",
+    "static/media/local-guide.png": "/static/media/local-guide.8b1a2a72652c2fd95070.png",
+    "static/media/aeroplane.png": "/static/media/aeroplane.c98536e25a0399f330d5.png",
+    "index.html": "/index.html",
+    "main.b5a048cd.css.map": "/static/css/main.b5a048cd.css.map",
+    "main.6871fefd.js.map": "/static/js/main.6871fefd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5a048cd.css",
+    "static/js/main.6871fefd.js"
+  ]
+}
